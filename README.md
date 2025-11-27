@@ -1,36 +1,41 @@
-# Tyto Invest Website
+# Vylinkia Invest Website
 
-Ce dossier contient le site vitrine de Tyto Invest.
-Il est destiné à être hébergé gratuitement sur **GitHub Pages**.
+Site vitrine pour l'application mobile Vylinkia Invest.
 
-## Comment mettre en ligne ?
+## Déploiement
 
-1.  Ouvrez un terminal dans ce dossier :
-    ```bash
-    cd tyto-website
-    ```
+Ce site est hébergé sur GitHub Pages.
 
-2.  Initialisez un nouveau dépôt Git :
-    ```bash
-    git init
-    git add .
-    git commit -m "Initial commit"
-    ```
+### Prérequis
 
-3.  Créez un nouveau dépôt **PUBLIC** sur GitHub (nommez-le par exemple `tyto-website`).
+- Un compte GitHub
+- Git installé sur votre machine
 
-4.  Liez ce dossier à votre nouveau dépôt (remplacez l'URL par la vôtre) :
-    ```bash
-    git remote add origin https://github.com/VOTRE_NOM/tyto-website.git
-    git branch -M main
-    git push -u origin main
-    ```
+### Instructions de déploiement
 
-5.  Activez GitHub Pages :
-    *   Allez sur GitHub > Settings > Pages.
-    *   Source : `Deploy from a branch`.
-    *   Branch : `main` / `root`.
+1. Initialiser le dépôt git (si ce n'est pas déjà fait) :
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   ```
 
-## Nom de Domaine
-Une fois votre domaine acheté (ex: `tytoinvest.com`), ajoutez-le dans les réglages "Custom domain" de GitHub Pages.
+2. Créer un dépôt sur GitHub nommé `vylinkia-website`.
+
+3. Lier le dépôt local au dépôt distant :
+   ```bash
+   git remote add origin https://github.com/VOTRE_USERNAME/vylinkia-website.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+4. Activer GitHub Pages :
+   - Allez dans les paramètres du dépôt sur GitHub.
+   - Section "Pages".
+   - Source : `main` branch.
+   - Save.
+
+5. Domaine personnalisé (Optionnel) :
+   - Le fichier `CNAME` est déjà présent avec le domaine `vylinkia-invest.com`.
+   - Configurez vos enregistrements DNS chez votre registrar pour pointer vers GitHub Pages.
 Cela créera automatiquement un fichier `CNAME` ici.
