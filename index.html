@@ -243,30 +243,64 @@
             </div>
             <p class="mt-8 text-xs max-w-2xl mx-auto">
                 Avertissement : Le trading comporte des risques. Les performances passées ne préjugent pas des
-                résultats futurs. Vylinkia Invest n'est pas un conseiller financier.
-            </p>
-        </div>
-    </footer>
+                <!-- Navbar -->
+            <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <span class="text-2xl font-bold tracking-tight">Vylinkia<span
+                            class="text-green-400">Invest</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#features" class="hover:text-green-400 transition">Fonctionnalités</a>
+                    <a href="#pricing" class="hover:text-green-400 transition">Tarifs</a>
+                    <a href="#contact" class="hover:text-green-400 transition">Contact</a>
 
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
+                    <!-- Language Switcher -->
+                    <div class="flex space-x-3 border-l border-slate-700 pl-6">
+                        <a href="#" class="hover:scale-110 transition" title="Français">🇫🇷</a>
+                        <a href="en/index.html" class="hover:scale-110 transition opacity-50 hover:opacity-100"
+                            title="English">🇬🇧</a>
+                        <a href="es/index.html" class="hover:scale-110 transition opacity-50 hover:opacity-100"
+                            title="Español">🇪🇸</a>
+                        <a href="de/index.html" class="hover:scale-110 transition opacity-50 hover:opacity-100"
+                            title="Deutsch">🇩🇪</a>
+                        <a href="it/index.html" class="hover:scale-110 transition opacity-50 hover:opacity-100"
+                            title="Italiano">🇮🇹</a>
+                    </div>
+                </div>
+                <a href="#"
+                    class="bg-green-500 hover:bg-green-600 text-slate-900 font-bold py-2 px-6 rounded-full transition">
+                    Télécharger
+                </a>
+            </nav>
 
-            // Obfuscation simple
-            const user = 'contact';
-            const domain = 'vylinkia-invest.com';
-            const address = user + '@' + domain;
-
-            const subject = encodeURIComponent('Contact depuis le site Vylinkia Invest');
-            const body = encodeURIComponent(`Nom: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
-
-            window.location.href = `mailto:${address}?subject=${subject}&body=${body}`;
-        });
-    </script>
-
-</body>
-
-</html>
+            <!-- Hero Section -->
+            <header
+                class="container mx-auto px-6 py-20 text-center md:text-left flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2">
+                    <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+                        Investissez avec la <br>
+                        <span class="gradient-text">Vision Vylinkia</span>
+                    </h1>
+                    <p class="text-xl text-slate-400 mb-8">
+                        Recevez des signaux d'achat et de vente basés sur l'IA pour les meilleures actions européennes
+                        et
+                        américaines. Simple, clair,
+                        efficace.
+                    </p>
+                    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                        <a href="#"
+                            class="bg-white text-slate-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition text-center">
+                            Démarrer l'essai gratuit
+                        </a>
+                        <a href="#features"
+                            class="border border-slate-600 text-white font-bold py-3 px-8 rounded-full hover:bg-slate-800 transition text-center">
+                            En savoir plus
+                        </a>
+                    </div>
+                    <p class="mt-4 text-sm text-slate-500">Disponible sur Android. Bientôt sur iOS.</p>
+                </div>
+                <div class="md:w-1/2 mt-12 md:mt-0 relative">
+                    <!-- App Screenshot -->
+                    <div
+                        class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl overflow-hidden">
+                        <div class="w-[148px] h-[18px
